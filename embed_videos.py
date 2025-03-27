@@ -174,20 +174,10 @@ def enhance_prompt(query):
     Format the query following SigLIP/CLIP pattern.
     """
     # Basic template following CLIP/SigLIP pattern
-    template = "This is a photo of {}."
+    template = "This is a photo containing {}."
     
     # Clean up the query
     query = query.lower().strip()
-    
-    # Handle specific types of queries
-    if any(word in query for word in ["car", "vehicle", "truck"]):
-        if any(color in query for color in ["red", "blue", "green", "yellow", "white", "black"]):
-            # For colored vehicles, maintain the color-first pattern
-            template = "This is a photo of a {} on a road."
-        else:
-            template = "This is a photo of a {} driving on a road."
-    elif "person" in query or "people" in query:
-        template = "This is a photo of {} in the scene."
     
     enhanced = template.format(query)
     print(f"Enhanced prompt: '{enhanced}'")
