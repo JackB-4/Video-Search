@@ -5,7 +5,7 @@ A Python application that allows you to search through videos using natural lang
 ## Features
 
 - Extract one frame per second from videos
-- Generate embeddings using the SigLIP model
+- Generate embeddings using the SigLIP 2 model
 - Search videos using natural language queries
 - GPU acceleration for faster processing
 - Support for common video formats (mp4, avi, mov, mkv)
@@ -77,7 +77,3 @@ The application will return the most relevant video segments based on your query
 - Processing time depends on the number and length of videos
 - Embeddings are stored in `video_embeddings.json` and can be reused for multiple searches
 - The `videos` directory is empty by default - add your videos before running the application
-
-## License
-
-This project is open source and available under the MIT License.
