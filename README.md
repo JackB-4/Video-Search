@@ -24,19 +24,9 @@ git clone https://github.com/JackB-4/Video-Search.git
 cd Video-Search
 ```
 
-2. Create and activate a virtual environment:
+2. Run the setup script to create a virtual environment and install dependencies:
 ```bash
-python -m venv venv
-# On Windows:
-venv\Scripts\activate
-# On Unix or MacOS:
-source venv/bin/activate
-```
-
-3. Install the required packages:
-```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install transformers opencv-python pillow tqdm numpy
+bash setup.sh
 ```
 
 ## Usage
